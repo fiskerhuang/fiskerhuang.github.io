@@ -1,0 +1,41 @@
+<html lang="en"><head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Media</title>
+ </head>
+ <body style="height: 1000px;">
+	<button onclick="play()">点击播放视频</button>
+	<video id="player" controls="controls" style="width:600px;height:480px" webkit-playsinline="true" x5-playsinline="true" playsinline="true">
+        <source src="0a726b0b97bccef91e9ce8063404b4a6.mp4" type='video/mp4'>
+    </video>
+	<script>
+			const video = document.getElementById('player');
+		function play() {
+			//const video = document.createElement('video');
+
+			//video.setAttribute('webkit-playsinline', true); // 兼容iOS旧版本
+			//video.setAttribute('x5-playsinline', true); // 兼容X5内核
+			//video.setAttribute('playsinline', true);
+			//video.src = '00ee33f6cd72f4fb13f14910441d7f12.mp4';
+			
+			//document.body.appendChild(video);
+					
+			video.onerror = alert;
+			//video.play();
+			if (video.paused) 
+				video.play(); 
+			else 
+			video.pause(); 
+
+			
+			
+		}
+	</script>
+
+</body>
+</html>
+
+
+<body>
+</body>
