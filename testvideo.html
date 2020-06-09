@@ -28,7 +28,13 @@
 			//else 
 			//video.pause(); 
 
-			
+			setTimeout(() =>　{
+                video.pause();
+                setTimeout(() => {
+                    //video.play().catch(alert);
+					video.play();
+                }, 1500);
+            }, 5000);
 			
 		}
 	</script>
